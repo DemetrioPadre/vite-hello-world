@@ -1,7 +1,18 @@
+.container {
+  text-align: center;
+}
+
 .red {
   color: red;
 }
 
 .blue {
   color: blue;
+}
+
+.jumboContainer {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+
 }
