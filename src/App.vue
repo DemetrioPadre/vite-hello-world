@@ -1,11 +1,12 @@
 <!-- creo uno script dove collegare vue e creare ciò che mi serve -->
 <script>
-import { computed } from 'vue';
+
 
 export default {
   data() {
     return {
-      title: 'primo progetto vite'
+      title: 'La mia prima app con Vite',
+      secondTitle: 'fino ad ora è stato molto, anzi troppo facile'
     };
 
   },
@@ -23,7 +24,15 @@ export default {
 
 <template>
   <!-- dentro il template creo un h1 dove collegare il js -->
-  <h1>{{ title }}</h1>
+  <div>
+    <h1 class="blue">{{ title }}</h1>
+  </div>
+  <div>
+    <h2 class="red">{{ secondTitle }}</h2>
+  </div>
 </template>
 
-<style></style>
+
+<style>
+@import url(./style.css);
+</style>
